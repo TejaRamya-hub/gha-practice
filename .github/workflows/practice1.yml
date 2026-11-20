@@ -2,7 +2,7 @@ name: Hello World
 on: workflow_dispatch
 jobs: 
  hello: 
-  runs-on: unbuntu_latest
+   runs-on: unbuntu-latest
   steps: 
   - name: Hello Step
     run:  echo "Welcome to GHA Practice Session"
