@@ -13,7 +13,7 @@ jobs:
       - name: Test
         run: 
          echo "Test the App"
-   Deploy:
+  Deploy:
      runs-on: ubuntu-latest
      steps:
        - name: Deploy
