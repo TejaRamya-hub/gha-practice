@@ -1,23 +1,11 @@
 name: Hello World
-on: workflow_dispatch
+on: push
 jobs:
   Build:
     runs-on: ubuntu-latest
     steps:
       - name: Build
-        run: 
+        run: |
          echo "Take a Build"
-  Test: 
-    needs: Build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Test
-        run: 
-         echo "Test the App"
-  Deploy:
-    needs: Test
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy
-        run:
-          echo "Deploy to App"
+         echo "Check the build is success"
+
