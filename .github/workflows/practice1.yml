@@ -1,10 +1,10 @@
 name: Hello World
 on: workflow_dispatch
 jobs:
-  Build:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Build
+      - name: build
         run: 
          echo "Take a Build"
   Test: 
